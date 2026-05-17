@@ -13,8 +13,11 @@ API_PASSPHRASE = os.getenv("BITGET_PASSPHRASE")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-BASE_URL = "https://api.bitget.com"
+BASE_URL = "https://vapi.bitget.com"
 bot = Bot(token=TELEGRAM_TOKEN)
+
+
+
 
 def get_timestamp():
     return str(int(time.time() * 1000))
